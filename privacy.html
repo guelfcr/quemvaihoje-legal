@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Política de Privacidade — Quem Vai Hoje?</title>
+  <style>
+    :root { --primary: #1C8A3B; --bg: #1C1C1C; --fg: #F5F5F5; --muted: #A0A0A0; --border: #333; }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+      line-height: 1.6;
+    }
+    nav { font-size: 14px; margin-bottom: 32px; }
+    nav a { color: var(--muted); text-decoration: none; }
+    nav a:hover { color: var(--primary); }
+    h1 { font-size: 30px; margin: 0 0 8px; }
+    .meta { color: var(--muted); font-size: 14px; margin-bottom: 32px; }
+    h2 { font-size: 22px; margin: 40px 0 12px; color: var(--primary); }
+    h3 { font-size: 17px; margin: 24px 0 8px; }
+    p, li { font-size: 16px; }
+    table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+    th, td { border: 1px solid var(--border); padding: 10px; text-align: left; vertical-align: top; }
+    th { background: rgba(255,255,255,0.05); }
+    a { color: var(--primary); }
+    .callout {
+      background: rgba(28,138,59,0.1);
+      border-left: 3px solid var(--primary);
+      padding: 12px 16px;
+      margin: 16px 0;
+      border-radius: 4px;
+    }
+    footer { margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--border); color: var(--muted); font-size: 13px; }
+  </style>
+</head>
+<body>
+  <nav><a href="./">← Voltar</a></nav>
+
+  <h1>Política de Privacidade</h1>
+  <p class="meta">Versão 1.0 · Vigente desde 25 de maio de 2026</p>
+
+  <p>
+    Esta Política descreve como o aplicativo <strong>Quem Vai Hoje?</strong> ("aplicativo", "nós")
+    coleta, usa, armazena e protege os dados pessoais dos seus usuários ("você", "titular"),
+    em conformidade com a Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018 — "LGPD").
+  </p>
+
+  <h2>1. Quem é o controlador dos dados</h2>
+  <p>
+    O controlador, conforme definido pelo art. 5º, VI, da LGPD, é:
+  </p>
+  <ul>
+    <li><strong>Miguel Fernando Coelho Rodrigues</strong> — pessoa física</li>
+    <li>Blumenau / Santa Catarina, Brasil</li>
+    <li>Contato para questões de privacidade: <a href="mailto:quemvaihoje@gmail.com">quemvaihoje@gmail.com</a></li>
+  </ul>
+  <p>
+    O aplicativo é mantido como projeto pessoal independente, sem CNPJ ou pessoa jurídica
+    associada nesta versão.
+  </p>
+
+  <h2>2. Quais dados coletamos e por quê</h2>
+  <p>
+    Coletamos apenas o estritamente necessário para o funcionamento do aplicativo. A tabela
+    a seguir lista todos os dados pessoais tratados:
+  </p>
+  <table>
+    <thead>
+      <tr>
+        <th>Dado</th>
+        <th>Origem</th>
+        <th>Finalidade</th>
+        <th>Base legal (LGPD art. 7º)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>E-mail</td>
+        <td>Conta Google do dispositivo (Sign in with Google)</td>
+        <td>Identificação única da conta</td>
+        <td>Execução de contrato (uso do app) e consentimento</td>
+      </tr>
+      <tr>
+        <td>Nome</td>
+        <td>Conta Google do dispositivo</td>
+        <td>Exibição no perfil e nas listas de membros</td>
+        <td>Execução de contrato e consentimento</td>
+      </tr>
+      <tr>
+        <td>Foto de perfil (avatar)</td>
+        <td>Conta Google do dispositivo</td>
+        <td>Exibição visual no perfil</td>
+        <td>Consentimento</td>
+      </tr>
+      <tr>
+        <td>Posição de jogo, gols, presenças, patotas</td>
+        <td>Informado por você no app</td>
+        <td>Funcionalidade central do app (organização de peladas)</td>
+        <td>Execução de contrato</td>
+      </tr>
+      <tr>
+        <td>Token de notificação push (Expo Push Token)</td>
+        <td>Gerado pelo dispositivo na primeira concessão de permissão</td>
+        <td>Enviar avisos quando os times forem montados</td>
+        <td>Consentimento (você escolhe permitir ou não)</td>
+      </tr>
+      <tr>
+        <td>Diagnóstico de erros (stack traces)</td>
+        <td>Capturado automaticamente quando o app falha</td>
+        <td>Identificar e corrigir bugs</td>
+        <td>Legítimo interesse — dados pessoais explícitos são desabilitados (<code>send_default_pii=false</code>)</td>
+      </tr>
+      <tr>
+        <td>Logs de requisição (request ID, IP, user-agent)</td>
+        <td>Servidor (Fly.io) ao receber chamadas do app</td>
+        <td>Operação e segurança da infraestrutura</td>
+        <td>Legítimo interesse</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="callout">
+    <strong>Não coletamos:</strong> localização, contatos, fotos da galeria, microfone,
+    histórico de navegação, dados de pagamento, dados biométricos ou qualquer dado sensível
+    nos termos do art. 5º, II, da LGPD.
+  </div>
+
+  <h2>3. Com quem compartilhamos seus dados</h2>
+  <p>
+    Não vendemos nem cedemos seus dados. Compartilhamos apenas com os
+    <strong>operadores (sub-processadores)</strong> estritamente necessários para a operação
+    do aplicativo:
+  </p>
+  <table>
+    <thead>
+      <tr><th>Operador</th><th>Função</th><th>Localização</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Supabase (Supabase Inc.)</td>
+        <td>Autenticação e armazenamento de dados</td>
+        <td>Estados Unidos / União Europeia</td>
+      </tr>
+      <tr>
+        <td>Google LLC</td>
+        <td>Autenticação OAuth (Sign in with Google) e Firebase Cloud Messaging para entrega de push notifications</td>
+        <td>Estados Unidos</td>
+      </tr>
+      <tr>
+        <td>Expo (650 Industries, Inc.)</td>
+        <td>Serviço Expo Push API que repassa notificações ao FCM</td>
+        <td>Estados Unidos</td>
+      </tr>
+      <tr>
+        <td>Fly.io (Fly.io, Inc.)</td>
+        <td>Hospedagem do servidor de aplicação</td>
+        <td>Brasil (região GRU)</td>
+      </tr>
+      <tr>
+        <td>Sentry (Functional Software, Inc.)</td>
+        <td>Coleta de erros e diagnósticos</td>
+        <td>Estados Unidos</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>
+    Dentro da sua patota, outros membros enxergam seus dados de jogador (nome, foto,
+    posição preferida, presenças, gols) — isso é parte central da funcionalidade do app.
+    Membros de outras patotas não têm acesso aos seus dados.
+  </p>
+
+  <h2>4. Transferência internacional de dados</h2>
+  <p>
+    Alguns sub-processadores listados acima processam dados fora do Brasil (principalmente nos
+    Estados Unidos). Essas transferências são feitas com base no art. 33 da LGPD, especificamente
+    nas hipóteses de cumprimento de obrigação contratual e consentimento específico, e os
+    operadores escolhidos seguem padrões internacionais reconhecidos de proteção de dados.
+  </p>
+
+  <h2>5. Por quanto tempo guardamos seus dados</h2>
+  <ul>
+    <li>
+      <strong>Enquanto sua conta estiver ativa:</strong> mantemos todos os dados listados na
+      seção 2 para que o app funcione normalmente.
+    </li>
+    <li>
+      <strong>Após pedido de exclusão:</strong> sua conta entra em "exclusão lógica" imediatamente
+      (você perde acesso e suas patotas presididas são desativadas). Após 30 dias, os dados são
+      apagados definitivamente dos nossos bancos. Esse período existe apenas para permitir
+      recuperação acidental — não revendemos, transferimos ou processamos esses dados durante
+      a janela.
+    </li>
+    <li>
+      <strong>Logs de erro e operacionais:</strong> retidos por até 90 dias.
+    </li>
+    <li>
+      <strong>Backups do banco:</strong> snapshots diários retidos por 7 dias pelo Supabase.
+      Após 30 dias da exclusão, dados não retornam mais a partir de backup.
+    </li>
+  </ul>
+
+  <h2>6. Seus direitos como titular</h2>
+  <p>O art. 18 da LGPD garante a você os seguintes direitos:</p>
+  <ul>
+    <li><strong>Confirmação e acesso:</strong> saber se tratamos seus dados e quais são.</li>
+    <li><strong>Correção:</strong> corrigir dados incompletos, inexatos ou desatualizados — você pode editar nome e posição diretamente nas Configurações do app.</li>
+    <li><strong>Anonimização, bloqueio ou eliminação:</strong> dados desnecessários, excessivos ou tratados em desconformidade.</li>
+    <li>
+      <strong>Eliminação da conta:</strong> use o botão <strong>"Apagar minha conta"</strong>
+      em Configurações dentro do app — a exclusão é processada imediatamente, sem intervenção
+      humana. Alternativamente, escreva para o e-mail abaixo.
+    </li>
+    <li><strong>Portabilidade:</strong> receber seus dados em formato estruturado e interoperável (mediante solicitação por e-mail).</li>
+    <li><strong>Revogação de consentimento:</strong> a qualquer momento, com as consequências naturais (sem conta, sem app).</li>
+    <li><strong>Informação sobre compartilhamentos:</strong> a lista completa está na seção 3 desta política.</li>
+    <li><strong>Reclamação à ANPD:</strong> Autoridade Nacional de Proteção de Dados, <a href="https://www.gov.br/anpd/">www.gov.br/anpd</a>.</li>
+  </ul>
+  <p>
+    Para exercer qualquer um desses direitos por canal externo, escreva para
+    <a href="mailto:quemvaihoje@gmail.com">quemvaihoje@gmail.com</a>. Respondemos em até
+    15 dias corridos.
+  </p>
+
+  <h2>7. Segurança dos dados</h2>
+  <ul>
+    <li>Toda comunicação entre o app e nossos servidores usa HTTPS (TLS 1.2 ou superior).</li>
+    <li>O token de autenticação fica armazenado no <em>secure storage</em> do dispositivo (Android Keystore).</li>
+    <li>Senhas <strong>não existem</strong> no sistema — você entra exclusivamente pela sua conta Google.</li>
+    <li>O servidor valida cada requisição com JWT assinado pelo Supabase Auth.</li>
+    <li>Acesso administrativo ao banco de dados é restrito ao controlador, com autenticação de dois fatores.</li>
+  </ul>
+
+  <h2>8. Crianças e adolescentes</h2>
+  <p>
+    O aplicativo é destinado a usuários com <strong>13 anos ou mais</strong>. Não coletamos
+    intencionalmente dados de crianças menores de 13 anos. Se identificarmos cadastro de menor
+    sem consentimento legal apropriado (art. 14 da LGPD), a conta será excluída imediatamente.
+    Se você é responsável legal e identificar essa situação, escreva para
+    <a href="mailto:quemvaihoje@gmail.com">quemvaihoje@gmail.com</a>.
+  </p>
+
+  <h2>9. Cookies e tecnologias similares</h2>
+  <p>
+    O aplicativo é nativo Android — não utiliza cookies. O servidor não rastreia comportamento
+    de navegação além do mínimo necessário (logs de requisição, descritos na seção 2).
+  </p>
+
+  <h2>10. Alterações nesta política</h2>
+  <p>
+    Podemos atualizar esta política a qualquer momento. Mudanças <strong>materiais</strong>
+    (ex: novos dados coletados, novos sub-processadores) serão comunicadas dentro do
+    aplicativo antes da entrada em vigor, com a opção de revogar consentimento. Mudanças
+    cosméticas (correção de redação, atualização de links) entram em vigor imediatamente.
+    O número de versão e a data de vigência no topo desta página sempre refletem a versão
+    atual.
+  </p>
+
+  <h2>11. Contato</h2>
+  <p>
+    Dúvidas, solicitações ou reclamações sobre esta política:
+    <a href="mailto:quemvaihoje@gmail.com">quemvaihoje@gmail.com</a>
+  </p>
+
+  <footer>
+    Quem Vai Hoje? — Política de Privacidade v1.0<br>
+    Última atualização: 25/05/2026<br>
+    <a href="./">Voltar para o índice</a> · <a href="./terms.html">Termos de Uso</a>
+  </footer>
+</body>
+</html>
